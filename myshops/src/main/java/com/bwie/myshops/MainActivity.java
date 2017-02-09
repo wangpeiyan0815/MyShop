@@ -95,6 +95,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     private void initFragment(int index) {
         // 由于是引用了V4包下的Fragment，所以这里的管理器要用getSupportFragmentManager获取
         FragmentManager fragmentManager = getSupportFragmentManager();
+
+
         // 开启事务
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         // 隐藏所有Fragment

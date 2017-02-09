@@ -5,19 +5,19 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bwie.myshops.base.BaseActivity;
 import com.bwie.myshops.fragment.FavorableFragment;
 import com.bwie.myshops.fragment.MoonshineFragment;
 import com.bwie.myshops.fragment.MyFragment;
 import com.bwie.myshops.fragment.ShopcartFragment;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends BaseActivity implements View.OnClickListener{
     private TextView main_tv_home;
     private LinearLayout mian_ll_home, main_ll_home2, mian_ll_home3, mian_ll_home4;
     private TextView mian_tv2_home;
@@ -163,4 +163,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         main_tv3_home.setTextColor(Color.BLACK);
         mian_tv4_home.setTextColor(Color.BLACK);
     }
+
+
 }
